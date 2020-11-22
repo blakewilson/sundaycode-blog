@@ -1,0 +1,20 @@
+.logo {
+  max-width: 160px;
+  height: 1.75rem;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.logo path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke: black;
+}
+
+.animateLogo .path {
+  animation: dash 3s linear both;
+}

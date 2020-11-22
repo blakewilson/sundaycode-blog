@@ -14,3 +14,27 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Fix Tailwind CSS 2.0 no dark mode for prose */
+@media (prefers-color-scheme: dark) {
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4,
+  .prose h5,
+  .prose h6 {
+    color: #fff;
+  }
+
+  .prose strong {
+    color: #fff;
+  }
+
+  .prose blockquote {
+    color: #fff;
+  }
+
+  .prose code {
+    color: #fff;
+  }
+}
